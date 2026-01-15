@@ -1,5 +1,5 @@
 <?php
-require('class.php');
+require_once('class.php');
 class Post {
     private $title;
     private $category;
@@ -20,6 +20,6 @@ class Post {
     }
 }
 $user = new Post("Titolo", new Storia(), "Etichetta");
-$utenti = new Post("Titolo", new Gossip(), "Etichetta");
+$utenti = new Post("Titolo 2", new Gossip(), "Etichetta 2");
 $user->getCategory();
 $utenti->getTitle();
