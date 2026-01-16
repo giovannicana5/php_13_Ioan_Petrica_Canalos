@@ -22,6 +22,3 @@ class Storia extends Category {
         return "Ho scelto questo categoria perchè mi sono appassionato per questa materia \n";
     }
 }
-$subject = new Storia();
-$subject->getMyCategory();
-print_r($subject);
