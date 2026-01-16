@@ -21,7 +21,5 @@ class Post {
 }
 $user = new Post("Titolo", new Storia(), "Etichetta");
 $utenti = new Post("Titolo 2", new Gossip(), "Etichetta 2");
-$user->getCategory();
-$utenti->getTitle();
-print_r($user);
-print_r($utenti);
+echo $user->getCategory() . "\n";
+echo $utenti->getTitle() . "\n";
