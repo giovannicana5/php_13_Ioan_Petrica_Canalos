@@ -4,7 +4,7 @@ class Post {
     private $title;
     private $category;
     private $tag;
-    public function __constructor($titolo, Category $categoria, $etichetta) {
+    public function __construct($titolo, Category $categoria, $etichetta) {
         $this->title = $titolo;
         $this->category = $categoria;
         $this->tag = $etichetta;
@@ -23,3 +23,5 @@ $user = new Post("Titolo", new Storia(), "Etichetta");
 $utenti = new Post("Titolo 2", new Gossip(), "Etichetta 2");
 $user->getCategory();
 $utenti->getTitle();
+print_r($user);
+print_r($utenti);

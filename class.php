@@ -22,21 +22,6 @@ class Storia extends Category {
         return "Ho scelto questo categoria perchè mi sono appassionato per questa materia \n";
     }
 }
-trait Iscrizione {
-    public function pagamento() {
-        echo "Sono uno studente che ha scelto questa categoria con l'obiettivo di iscrivermi in modo da far avverrare i miei sogni \n";
-    }
-}
-class Corso {
-    use Iscrizione;
-    public $getMyCategory;
-    public function __construct(Category $categoria) {
-        $this->getMyCategory = $categoria;
-    }
-    public function materia() {
-        $this->getMyCategory->getMyCategory();
-    }
-}
-$subject = new Corso(new Storia);
-// print_r($subject);
-$subject->materia();
+$subject = new Storia();
+$subject->getMyCategory();
+print_r($subject);
